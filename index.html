@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>KATIK</title>
+
+<div id="bordertext">
+<center><h1>KATIK Kalkulator Matematik</h1></center></div>
+<br>
+<center><h2>Welcome to Katik</h2></center>
+<center>Hi Sobat, Selamat Datang Di Katik :) </center>
+<center>Sebuah Web Apps sederhana yang berfungsi untuk menghitung nilai Luas dan Keliling Bangun Datar</center>
+<center>
+<script src="script.js"></script>
+     </head>
+     <br>
+     <body>
+     	<button onclick="tombol1()">PERSEGI PANJANG</button>
+		<div id="tombolPersegiPanjang">
+          		<h3>Hitung Luas dan Keliling Persegi Panjang</h3>
+          		<img src="PersegiPanjang.png" alt="HTML5 Icon" width="135" height="90">
+          		<form>
+               		<p>Panjang: <input type="text" id="panjang"></p>
+               		<p>Lebar: <input type="text" id="lebar"></p>
+               		<p><input type="button" value="Hitung" onclick="hitungLuasKelilingPersegiPanjang();"></p>
+               		<input type="reset" value="Reset">
+               		<p><b>Luas = </b> <i>Panjang x Lebar</i>: <input type="text" id="luaspersegipanjang"></p>
+               		<p><b>Keliling = </b> <i> 2 x (Panjang + Lebar )</i>: <input type="text" id="kelilingpersegipanjang"></p>
+          		</form>
+         </div>
+         <br>
+         <br>
+         <button onclick="tombol2()">PERSEGI</button>
+		 <div id="tombolPersegi">
+         		<h3>Hitung Luas dan Keliling Persegi</h3>
+          		<img src="persegi.png" alt="HTML5 Icon" width="90" height="90">
+          		<form>
+               		<p>Sisi: <input type="text" id="sisi"></p>
+               		<p><input type="button" value="Hitung" onclick="hitungLuasKelilingPersegi();"></p>
+               		<input type="reset" value="Reset">
+               		<p><b>Luas =</b> <i>Sisi x Sisi</i>: <input type="text" id="luaspersegi"></p>
+               		<p><b>Keliling =</b> <i> 4 x Sisi </i>: <input type="text" id="kelilingpersegi"></p>
+          		</form>
+         </div>
+     </body>
+</html>
